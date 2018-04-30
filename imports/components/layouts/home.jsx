@@ -1,5 +1,8 @@
+// home.jsx
+// Home layout component
+
 import React from 'react';
-const HomeLayout = React.createClass({
+class HomeLayout extends React.Component{
     render(){
         return (
             <div>
@@ -15,8 +18,8 @@ const HomeLayout = React.createClass({
                     </div>
                 </div>
             </div>
-        )
+        );
     }
-});
+}
 
 export default HomeLayout;

@@ -1,6 +1,9 @@
+// layout.jsx
+// App layout component
+
 import React from 'react';
 
-const Layout = React.createClass({
+class Layout extends React.Component{
     render(){
         return (
             <div className="wrapper">
@@ -12,8 +15,8 @@ const Layout = React.createClass({
                     </div>
                 </div>
             </div>
-        )
+        );
     }
-});
+}
 
 export default Layout;

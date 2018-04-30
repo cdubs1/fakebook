@@ -1,19 +1,14 @@
-
-
-import flowRouter from 'flow-router';
-import React from 'react';
-
 import { Meteor } from 'meteor/meteor';
+import { FlowRouter } from 'meteor/kadira:flow-router';
+import ReactLayout from 'meteor/kadira:react-layout';
 
-import { render } from 'react-dom';
-import ReactLayout from 'react-layout';
-import HomeLayout from '../../client/components/layouts/home.jsx'
-import Layout from '../../client/components/layouts/layout.jsx'
+import HomeLayout from '../../imports/components/layouts/home.jsx';
+import Layout from '../../imports/components/layouts/layout.jsx';
 
-var publicRoutes = flowRouter.group({
+var publicRoutes = FlowRouter.group({
     name: 'publicroutes'
 });
-var privateRoutes = flowRouter.group({
+var privateRoutes = FlowRouter.group({
     name: 'privateroutes'
 });
 
@@ -27,8 +22,8 @@ privateRoutes.route('/dashboard',{
     name:'Dashboard',
     action:function(){
         ReactLayout.render(Layout,{
-            sidebar:<div>sidebar</div>,
-            content:<div>content</div>
-            })
+                sidebar:<div>sidebar</div>,
+                content:<div>content</div>
+            });
     }
 })

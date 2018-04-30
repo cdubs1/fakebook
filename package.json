@@ -1,11 +1,29 @@
 {
   "name": "fakebook",
-  "private": true,
-  "scripts": {
-    "start": "meteor run"
+  "version": "1.0.0",
+  "description": "fakebook tutorial",
+  "main": "''",
+  "directories": {
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.36",
-    "meteor-node-stubs": "^0.3.2"
-  }
+    "babel": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^2.0.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "''"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdubs1/fakebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdubs1/fakebook/issues"
+  },
+  "homepage": "https://github.com/cdubs1/fakebook#readme"
 }
